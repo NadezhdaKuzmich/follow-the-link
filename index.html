@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Work 24</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 50px 0 0;
+        }
+        #link {
+            min-width: 300px;
+            border: 1px solid #005BBB;
+            border-radius: 8px;
+            padding: 5px 8px;
+        } 
+        .error {
+            font-size: 12px;
+            margin: 8px;
+            color: red;
+            display: none;
+        }
+        #search {
+            background: linear-gradient(90deg,#afd9f7,#459cf7);
+            padding: 5px 20px;
+            border: 2px solid #609ce0;
+            border-radius: 8px;
+            color: #033973;
+            cursor: pointer;
+            transition: all .5s ease;
+        }
+        #search:hover {
+            background: linear-gradient(90deg,#fafafa,#3292e7); 
+            box-shadow: 2px 4px 12px #6a94b2;
+        }
+    </style>
+</head>
+<body>
+    <form name="form" action="URL іншої сторінки">
+        <div class="input-box">
+            <input type="text" name="link" id="link" placeholder="Введіть посилання">
+            <p class="error">Ви не ввели посилання</p>
+        </div>
+        <input type="button" name="search" id="search" value="Перейти">
+    </form>
+    
+    <script src="./js/main.js"></script>    
+</body>
+</html>
